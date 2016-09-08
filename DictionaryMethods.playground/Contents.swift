@@ -149,3 +149,144 @@ let allTheMoons = Array(planetsAndTheirMoons.values)
 for numberOfMoons in planetsAndTheirMoons.values {
     print(numberOfMoons)
 }
+
+
+
+//tuples reviewed
+var (a, b, c) = (1, 2, 3)
+print(a)
+print(b)
+
+//dictionaries extra
+enum iOSDeviceType {
+    case iPhone
+    case iPad
+    case iWatch
+}
+
+var myDevice = iOSDeviceType.iPhone
+
+var userInfo: [String: String] = [
+    "first_name" : "Andrei",
+    "last_name" : "Puni",
+    "job_title" : "Mad scientist"
+]
+
+for (key, value) in userInfo {
+    print("\(key): \(value)")
+}
+
+
+print(userInfo.count)
+
+var stringsAsInts: [String:Int] = [
+    "zero" : 0,
+    "one" : 1,
+    "two" : 2
+]
+
+stringsAsInts.updateValue(3, forKey: "three")
+//stringsAsInts.updateValue(10, forKey: "three")
+
+stringsAsInts["zero"] = nil
+
+stringsAsInts.removeValueForKey("one")
+
+stringsAsInts
+
+
+//var code = [
+//    "a" : "b",
+//    "b" : "c",
+//    "c" : "d",
+//    "d" : "e",
+//    "e" : "f",
+//    "f" : "g",
+//    "g" : "h",
+//    "h" : "i",
+//    "i" : "j",
+//    "j" : "k",
+//    "k" : "l",
+//    "l" : "m",
+//    "m" : "n",
+//    "n" : "o",
+//    "o" : "p",
+//    "p" : "q",
+//    "q" : "r",
+//    "r" : "s",
+//    "s" : "t",
+//    "t" : "u",
+//    "u" : "v",
+//    "v" : "w",
+//    "w" : "x",
+//    "x" : "y",
+//    "y" : "z",
+//    "z" : "a"
+//]
+//
+//var message = "hello world"
+//
+//var encodedMessage = ""
+//
+//for char in message.characters {
+//    var character = "\(char)"
+//    if let encodedChar = code[character] {
+//        encodedMessage += encodedChar
+//    } else {
+//        encodedMessage += character
+//    }
+//}
+//
+//print(encodedMessage)
+
+var code = [
+    "a" : "b",
+    "b" : "c",
+    "c" : "d",
+    "d" : "e",
+    "e" : "f",
+    "f" : "g",
+    "g" : "h",
+    "h" : "i",
+    "i" : "j",
+    "j" : "k",
+    "k" : "l",
+    "l" : "m",
+    "m" : "n",
+    "n" : "o",
+    "o" : "p",
+    "p" : "q",
+    "q" : "r",
+    "r" : "s",
+    "s" : "t",
+    "t" : "u",
+    "u" : "v",
+    "v" : "w",
+    "w" : "x",
+    "x" : "y",
+    "y" : "z",
+    "z" : "a"
+]
+
+//var encodedMessage = "uijt nfttbhf jt ibse up sfbe"
+//
+//var decoder: [String:String] = [:]
+//
+//for (key, value) in code {
+//    decoder[value] = key
+//}
+//
+//
+//var decodedMessage = ""
+//
+//for char in encodedMessage.characters {
+//    var character = "\(char)"
+//    
+//    if let encodedChar = decoder[character] {
+//        decodedMessage += encodedChar
+//    } else {
+//        decodedMessage += character
+//    }
+//}
+
+
